@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoardGames on the Table</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./imagens/board-games.png" class="logo">
+        <h1 class="nome-loja">BoardGames on the Table</h1>
+    </header>
+    <main>
+        <h3>Qual seu jogo favorito?</h3>
+        <form id="escolhas">
+            <div class="alinhamento">
+                <div class="opcoes">
+                    <input type="radio" id="opcao1" name="games">
+                    <img src="./imagens/railroad.jpg" class="jogo">
+                    <h5>Rail road</h5>
+                </div>
+
+                <div class="opcoes">
+                    <input type="radio" id="opcao2" name="games">
+                    <img src="./imagens/potion-explosion-capa1.jpg" class="jogo">
+                    <h5>Potion Explosion</h5>
+                </div>
+
+                <div class="opcoes">
+                    <input type="radio" id="opcao3" name="games">
+                    <img src="./imagens/dixit.png" class="jogo">
+                    <h5>Dixit</h5>
+                </div>
+            </div>
+
+            <button type="button" id="ok" onclick="chamarJanela()" onmouseover="showdice()"
+                onmouseout="hidedice()">Escolhido!</button>
+            <img src="./imagens/unnamed.gif" id="dice">
+
+        </form>
+
+    </main>
+
+    <div id="caixaMaior">
+        <div id="faixaAzul">
+            <p id=cabecalhoCaixa>Que legal!!!</p>
+        </div>
+        <p id="mensagemCaixa">Texto da caixa de aviso</p>
+        <button id="botaoOk" onclick="fecharJanela()">Ok</button>
+    </div>
+
+    <footer>
+        <h6>Work hard. Play harder!</h6>
+    </footer>
+
+    <script src="./javascript/events.js"></script>
+</body>
+
+</html>
